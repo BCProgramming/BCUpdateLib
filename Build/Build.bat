@@ -14,6 +14,6 @@ if exist "%usetools%vcvars32.bat" call "%usetools%vcvars32.bat" &goto RANTOOLS
 if exist "%usetools%vsdevcmd.bat" call "%usetools%vsdevcmd.bat" &goto RANTOOLS
 :RANTOOLS
 echo building SQLSetup Tool.
-msbuild bBCUpdateLib.xml /filelogger /fileloggerparameters:Append /p:Platform=Any CPU;Configuration=Debug; /fl /t:"BCUpdateLib"
+msbuild BCUpdateLib.xml /filelogger /fileloggerparameters:Append /p:Platform=AnyCPU;Configuration=Debug; /fl /t:"BCUpdateLib"
 
 echo build completed. 
